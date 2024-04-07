@@ -5,6 +5,14 @@
 - **Immutable:** Once created, you cannot modify the elements within a tuple.
 - **Enclosed in parentheses ():** Elements are separated by commas.
 - **Useful for:** Representing data that shouldn't be changed (e.g., coordinates, configuration values).
+ ```python
+fruits = ("apple", "banana", "orange")
+print(fruits[1])   # Output: banana (access by index)
+
+# Trying to modify an element will result in an error:
+fruits[0] = "mango"  # TypeError: 'tuple' object does not support item assignment
+
+```
 ### Set
 - **Unordered collections of unique elements:** Sets don't guarantee the order in which elements are stored.
 - **Duplicate elements are not allowed:** If you try to add a duplicate, it will be ignored.
