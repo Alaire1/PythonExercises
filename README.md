@@ -57,3 +57,5 @@ Scientific notation is a way of expressing numbers that are too large or too sma
 -  Using Python's built-in formatting: `{seconds_from_epoch:.2e}`. The '.2e' format specifier is used to represent the number in scientific notation with 2 digits after the decimal point.
 
 - Manually calculating the mantissa and exponent: The mantissa is calculated by normalizing the number to be between 1 and 10, and the exponent is calculated as the power of 10 needed to reach the original number from the mantissa. The `math.floor()` and `math.log10()` functions are used to calculate the exponent, and the mantissa is calculated by dividing the original number by 10 raised to the power of the exponent. The mantissa is then rounded to 2 decimal places using the `round()` function.
+- 
+## ex02
