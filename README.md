@@ -6,11 +6,11 @@
 - **Enclosed in parentheses ():** Elements are separated by commas.
 - **Useful for:** Representing data that shouldn't be changed (e.g., coordinates, configuration values).
  ```python
-fruits = ("apple", "banana", "orange")
-print(fruits[1])   # Output: banana (access by index)
+ft_tuple = ("Hello", "toto!")
+print(ft_tuple[1])   # Output: toto! 
 
 # Trying to modify an element will result in an error:
-fruits[0] = "mango"  # TypeError: 'tuple' object does not support item assignment
+ft_tuple[0] = "tete"  # TypeError: 'tuple' object does not support item assignment
 
 ```
 ### Set
@@ -20,12 +20,12 @@ fruits[0] = "mango"  # TypeError: 'tuple' object does not support item assignmen
 - **Useful for:** Checking membership, removing duplicates, performing set operations (union, intersection, difference).
  
  ```python
- unique_letters = {"a", "b", "c", "b"}  # "b" will be ignored
-print(len(unique_letters))  # Output: 3 (only unique elements counted)
+ ft_set = {"Hello", "tutu!"}
+print(len(ft_set))  # Output: 2 (only unique elements counted)
 
 # Checking membership:
-if "c" in unique_letters:
-  print("c is present")
+if "Hello" in unique_letters:
+  print("Hello is present")
 ```
 ### Dictionary
 - **Unordered collections of key-value pairs:** Unlike lists and sets, dictionaries associate a value with a unique key.
@@ -34,12 +34,14 @@ if "c" in unique_letters:
 - **Enclosed in curly braces {}:** Keys and values are separated by colons (:), with key-value pairs separated by commas.
 - **Useful for:** Storing data where you need to access it by a unique identifier (e.g., phonebook, configurations).
 ```python
-person = {"name": "Alice", "age": 30, "hobbies": ["reading", "hiking"]}
-print(person["name"])  # Output: Alice (access by key)
+ft_dict = {"Hello" : "titi!"}
+print(ft_dict["Hello"])  # Output: titi! (access by key)
 
 # Modifying values is allowed:
-person["age"] = 31
-print(person)  # Output: {'name': 'Alice', 'age': 31, 'hobbies': ['reading', 'hiking']}
+ft_dict["Hello"] = World
+print(ft_dict)  # Output: {'Hello': 'World'}
+ft_dict["Hello"] = ["World", "Bonjour", "Hola"]
+print(ft_dict)  # Output: {'Hello': ['World', 'Bonjour', 'Hola']}
 
   ```
 
